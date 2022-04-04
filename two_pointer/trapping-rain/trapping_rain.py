@@ -1,5 +1,5 @@
 from typing import List
-
+# the objective is to find the mix of max height on the left and right of each pointer, that minus the current height gives you the gap
 
 def TrappingRain(height: List[int]) -> int:
     if len(height) < 3:
