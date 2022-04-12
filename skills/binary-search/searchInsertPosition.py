@@ -6,20 +6,7 @@ def searchInsert(nums: List[int], target: int):
     high = len(nums) - 1
     closesValUsed = nums[high]
     closestVal = nums[high]
-    while(low<high):
-        if nums[low] == target:
-            return low
-        if nums[high] == target:
-            return high
-
-        if closestVal > abs(nums[low]-target):
-            closestVal = abs(nums[low]-target)
-            closesValUsed = nums[low]
-
-        if closestVal > abs(nums[high]-target):
-            closestVal = abs(nums[high]-target)
-            closesValUsed = nums[high]
-
+    while(low<=high):
         mid = (low + high) //2
         if nums[mid] > target:
             high = mid -1

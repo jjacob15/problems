@@ -9,17 +9,8 @@ class badVersion:
         low = 0
         high = found = n
 
-        while(low < high):
-            lb = self.isBadVersion(low)
-
-            if lb:
-                return low
-
+        while(low <= high):
             mid = (low + high) // 2
-            if self.isBadVersion(low):
-                found = min(found, low)
-            if self.isBadVersion(high):
-                found = min(found, high)
             if self.isBadVersion(mid):
                 found = min(found, mid)
                 high = mid - 1

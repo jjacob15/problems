@@ -6,11 +6,11 @@ def search(nums, target):
         return 0 if nums[0] == target else -1
 
 
-    while low < high:
-        if nums[low] == target:
-            return low
-        if nums[high] == target:
-            return high
+    while low <= high:
+        # if nums[low] == target:
+        #     return low
+        # if nums[high] == target:
+        #     return high
 
         mid = (low + high) // 2
         if nums[mid] < target:

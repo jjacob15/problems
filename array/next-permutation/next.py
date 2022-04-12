@@ -1,5 +1,6 @@
 from typing import List
-# the idea here is finding the break point at which the sequence is not ordered. Find that point, swap it with the least from the remaining array and then sort it
+# the idea here is finding the break point at which the sequence is not ordered. Find that point, 
+# swap it with the least from the remaining array and then sort it
 
 def nextPermutation(nums: List[int]) -> None:
     bPoint, n = -1, len(nums)
