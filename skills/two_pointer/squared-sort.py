@@ -36,3 +36,7 @@ if __name__ == "__main__":
         print('pass')
     else:
         print('fail')
+    if squaredSort([10,11,8,7,6,5,4,3,2,1]) == [1,2,3,4,5,6,7,8,9,10,11]:
+        print('pass')
+    else:
+        print('fail')
