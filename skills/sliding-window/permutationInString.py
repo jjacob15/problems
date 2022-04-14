@@ -1,20 +1,5 @@
-# Input: s = "abcabcbb"
-# Output: 3
-# Explanation: The answer is "abc", with the length of 3.
-
-# Input: s = "bbbbb"
-# Output: 1
-# Explanation: The answer is "b", with the length of 1.
-
-# Input: s = "pwwkew"
-# Output: 3
-# Explanation: The answer is "wke", with the length of 3.
-# Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
-
-
-from typing import Counter
-
-
+# for word problems, check if you can create an arrary of all letters and use that as hash instead of a dict
+# if 
 def checkInclusion(s1, s2):
     target = [0]*26
     for x in s1:
