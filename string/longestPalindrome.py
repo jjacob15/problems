@@ -32,7 +32,7 @@ def longestPalindrome(s: str) -> str:
 
 
 if __name__ == "__main__":
-    for a in xrange(len("abcd")):
+    for a in range(len("abcd")):
         print(a)
 
     # if longestPalindrome("abcdefghij") == "":
